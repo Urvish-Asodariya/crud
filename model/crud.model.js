@@ -34,7 +34,7 @@ const productSchema = mongoose.Schema({
     },
     ratings: {
         type: Number,
-        min: [1, 'Must be at least 1, got {VALUE}'],
+        min: [1, 'Must be at least 1, got {VALUE}'],// this will show error if ratings not got more than 0 or 1
         max: 5
     }
 }, {
